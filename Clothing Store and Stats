@@ -1,0 +1,19 @@
+Create Table clothing (id integer primary key, name text, quantity integer, price integer);
+
+INSERT into Clothing Values
+(1,"Shirts",5,25),
+(2,"pants",3,30),
+(3,"skirts",3,32),
+(4,"shoes",2,40),
+(5,"dresses",2,50);
+
+SELECT * from clothing;
+SELECT * FROM clothing WHERE price < 40; 
+SELECT * FROM clothing where price > 40;
+
+SELECT SUM(quantity) from clothing; 
+SELECT name, SUM(QUANTITY) from clothing group by name;
+
+SELECT name FROM clothing group by price; 
+
+
